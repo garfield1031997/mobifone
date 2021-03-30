@@ -27,12 +27,13 @@ import { AuthGuard } from './shared/interceptors/auth.guard';
         HttpClientModule
     ],
     providers: [
+        AuthGuard,
         {
             provide: HTTP_INTERCEPTORS,
             useClass: APIInterceptor,
             multi: true,
         },
-        AuthGuard
+        
     ],
     bootstrap: [AppComponent],
 })

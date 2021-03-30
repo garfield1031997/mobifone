@@ -30,7 +30,7 @@ export class LoginFormComponent {
       (res) => {
         localStorage.setItem('access_token', JSON.stringify(res));
         localStorage.setItem('token', res.access_token);
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/pages/home');
       },
       (err) => {
         this.notificationService.showError('Đăng nhập thất bại!', err.message);

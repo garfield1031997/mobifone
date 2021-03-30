@@ -11,6 +11,16 @@ const routes: Routes = [
                 loadChildren: () =>
                     import('./home/home.module').then((m) => m.HomeModule),
             },
+            {
+                path: 'portal',
+                loadChildren: () =>
+                    import('./portal/portal.module').then((m) => m.PortalModule),
+            },
+            {
+                path: '',
+                redirectTo: 'home',
+                pathMatch: 'full',
+            }
             
         ],
     },

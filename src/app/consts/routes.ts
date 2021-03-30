@@ -1,16 +1,13 @@
 export enum Routes {
     LOGIN = '/login',
-    HOME = '/home',
-    EMPLOYEE = '/employee',
-    WORKDAYS = '/workdays',
-    SALARY = '/salary',
-    EMAIL = '/email',
-    REPORT = '/report',
-    PORTAL = '/portal',
-    SUPPORT_CTKV = '/support-ctkv',
-    SUPPORT_VNCERT = '/support-vncert',
-    CSKH = '/cskh',
-    SETTING = '/setting'
+    HOME = '/pages/home',
+    EMAIL = '/pages/email',
+    REPORT = '/pages/report',
+    PORTAL = '/pages/portal',
+    SUPPORT_CTKV = '/pages/support-ctkv',
+    SUPPORT_VNCERT = '/pages/support-vncert',
+    CSKH = '/pages/cskh',
+    SETTING = '/pages/setting'
 
 }
 

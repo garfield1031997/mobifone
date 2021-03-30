@@ -4,16 +4,17 @@ import { AuthGuard } from './shared/interceptors/auth.guard';
 
 const routes: Routes = [
     {
-        path: 'login',
-        loadChildren: () =>
-            import('./pages/auth/auth.module').then((m) => m.AuthModule),
-    },
-    {
-        path: '',
+        path: 'pages',
         canActivate: [AuthGuard],
         loadChildren: () =>
             import('./pages/pages.module').then((m) => m.PagesModule),
     },
+    {
+        path: 'login',
+        loadChildren: () =>
+            import('./pages/auth/auth.module').then((m) => m.AuthModule),
+    },
+    { path: '', redirectTo: 'pages', pathMatch: 'full' },
     {
         path: '**',
         redirectTo: '404',
