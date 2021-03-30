@@ -2,10 +2,15 @@
 @import "src/app/styles/font";
 @import "src/app/styles/variables";
 .nav {
-    background-color: #1a1a1a;
-    width: 240px;
+    background-color: $color-bg-menu;
+    width: 320px;
     height: 100vh;
     border-right: 1px solid #FFFFFF;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    .logo{
+        width: 92%;
+    }
     .nav-item {
         display: flex;
         justify-content: center;
@@ -17,16 +22,16 @@
         .nav-head {
             margin-bottom: 20px;
             color: $white;
-            width: 200px;
+            width: 250px;
             height: 57px !important;
             display: flex;
             align-items: center;
-            border-radius: 25px;
+            border-radius: 20px;
             font-size: 16px;
             position: relative;
             cursor: pointer;
             &:hover {
-                background: $white-35 !important;
+                background: $gradients-menu-active;
             }
             .nav-link {
                 width: 295px;
@@ -46,6 +51,7 @@
         margin-bottom: 60px;
     }
     .selected {
-        background: $white-35;
+        background: $gradients-menu-active;
+        
     }
 }
