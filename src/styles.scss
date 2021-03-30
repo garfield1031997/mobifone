@@ -6,7 +6,6 @@
 @import "src/app/styles/button";
 @import "src/app/styles/mat-tab";
 @import "src/app/styles/input";
-
 html,
 body {
     height: 100%;
@@ -15,22 +14,4 @@ body {
     margin: 0;
     font-family: OpenSans-Regular;
     overflow: hidden !important;
-}
-
-.hrm-p-t-40 {
-    padding-top: 40px;
-}
-
-.hrm-m-t-40 {
-    margin-top: 40px;
-}
-
-.hrm-title-page {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-}
-
-.hrm-text-align-right {
-    text-align: right;
 }
